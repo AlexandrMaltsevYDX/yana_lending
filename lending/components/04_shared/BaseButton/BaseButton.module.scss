@@ -1,0 +1,37 @@
+@import '~global_styles';
+
+@mixin button-base {
+  @include fonts(panel);
+  background-color: getColor(primary, base);
+  margin: 0;
+  padding: 16px;
+  border: none;
+  border-radius: 16px;
+  &:hover {
+    background-color: getColor(primary, hover);
+    cursor: pointer;
+  }
+}
+
+.button {
+  @include button-base;
+}
+
+.buttonAccent {
+  @include button-base;
+  background-color: getColor(accent, base);
+
+  &:hover {
+    background-color: getColor(accent, hover);
+  }
+}
+
+.buttonAccentAppointment {
+  @include button-base;
+  background-color: getColor(accent, base);
+  padding-right: 32px;
+  padding-left: 32px;
+  &:hover {
+    background-color: getColor(accent, hover);
+  }
+}

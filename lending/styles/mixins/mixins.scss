@@ -1,0 +1,116 @@
+@import "../variables/varaibles";
+
+@mixin breakpoint($point) {
+    @if  $point == screen1600 {
+      @media (max-width: 1600px) {@content;}
+    }
+    @else if $point == screen1370 {
+      @media (max-width: 1370px)  {@content;}
+    }
+    @else if $point == screen1280 {
+      @media (max-width: 1280px)  {@content;}
+    }
+    @else if $point == screen1160 {
+      @media (max-width: 1160px) {@content;}
+    }
+    @else if $point == screen1048 {
+      @media (max-width: 1048px) {@content;}
+    }
+    @else if $point == screen1024 {
+      @media (max-width: 1024px) {@content;}
+    }
+    @else if $point == screen960 {
+      @media (max-width: 960px) {@content;}
+    }
+    @else if $point == screen900 {
+      @media (max-width: 900px) {@content;}
+    }
+    @else if $point == screen768 {
+      @media (max-width: 768px) {@content;}
+    }
+    @else if $point == screen660 {
+      @media (max-width: 661px) {@content;}
+    }
+    @else if $point == screen640 {
+      @media (max-width: 640px) {@content;}
+    }
+    @else if $point == screen576 {
+      @media (max-width: 576px) {@content;}
+    }
+    @else if $point == screen480 {
+      @media (max-width: 480px) {@content;}
+    }
+    @else if $point == screen320 {
+      @media (max-width: 320px) {@content;}
+    }
+  }
+
+@mixin smart-breakpoint($point) {
+  @media (max-width: $point) {
+    @content;
+  }
+}
+
+@mixin fonts($set){
+  @if $set == panel{
+    font-size: getFont(size, sm);
+    font-weight: getFont(weight, bold);
+    color: getColor(font, main);
+  }
+  @else if $set == superHeader{
+    font-size: getFont(size, lx);
+    font-weight: getFont(weight, bold);
+    color: getColor(font, base);
+  }
+  @else if $set == regularHeader{
+    font-size: getFont(size, lg);
+    font-weight: getFont(weight, bold);
+    color: getColor(font, base);
+  }
+  @else if $set == regular{
+    font-size: getFont(size, md);
+    font-weight: getFont(weight, normal);
+    color: getColor(font, base);
+  }
+  @else if $set == regular-bold{
+    font-size: getFont(size, md);
+    font-weight: getFont(weight, bold);
+    color: getColor(font, base);
+  }
+}
+
+
+
+@mixin interpolation-fonts(){
+  @include breakpoint(screen1370) {
+    font-size: calc(1rem * pow(0.9, 1));
+  }
+  @include breakpoint(screen1280) {
+    font-size: calc(1rem * pow(0.9, 2));
+  }
+  @include breakpoint(screen1160) {
+    font-size: calc(1rem * pow(0.9, 3));
+  }
+  @include breakpoint(screen1048) {
+    font-size: calc(1rem * pow(0.9, 3.2));
+  }
+  @include breakpoint(screen960) {
+    font-size: calc(1rem * pow(0.9, 4));
+  }
+  @include breakpoint(screen900) {
+    font-size: calc(1rem * pow(0.9, 5.5));
+  }
+  @include breakpoint(screen768) {
+    font-size: calc(1rem * pow(0.9, 6.8));
+  }
+}
+
+@mixin px($value){
+  padding-left: $value;
+  padding-right: $value;
+}
+
+@mixin py($value){
+  padding-top: $value;
+  padding-bottom: $value;
+}

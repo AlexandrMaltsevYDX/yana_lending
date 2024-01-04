@@ -1,0 +1,65 @@
+@import '~global_styles';
+
+.TopNav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  background-color: getColor(panel, base);
+  width: 100%;
+  height: 90px;
+}
+
+.Group {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 4px;
+  justify-content: space-between;
+
+  &__left {
+    @extend .Group;
+    padding: 0;
+    @include breakpoint(screen1600) {
+      display: flex;
+    }
+    @include breakpoint(screen1048) {
+      display: none;
+    }
+
+    &_norrow {
+      @extend .Group__left;
+      display: none;
+      @include breakpoint(screen1048) {
+        display: flex;
+      }
+    }
+  }
+
+;
+
+  &__right {
+    @extend .Group;
+    padding-right: 16px;
+  }
+;
+
+}
+
+.DropDown {
+  flex-direction: column;
+  position: fixed;
+  top: 80px;
+  left: 0;
+  background-color: getColor(panel, base);
+  border-bottom-right-radius: 16px;
+  border-bottom-left-radius: 16px;
+  &_colapsed {
+    @extend .DropDown;
+    display: none;
+  }
+  &_expanded {
+    @extend .DropDown;
+    display: flex;
+  }
+}

@@ -1,0 +1,15 @@
+@import '~global_styles';
+
+
+.BaseWrapper{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  @include px(16px);
+  @include py(62px);
+  width: min(100%, 1512px);
+  background-color: #e3cfb5;
+}
+
+

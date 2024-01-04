@@ -1,0 +1,60 @@
+// Define your color variables
+$black: #090c10;
+$black-light: #2B2626;
+$lightGray: #C9C9C9;
+$white: #FFFFFF;
+$ocher: #CC7951;
+$ocher-light: #d08c6c;
+$white: #FFFFFF;
+
+
+// Define a map for color styles
+$colors: (
+        panel: (
+                base: $black,
+        ),
+        main:(
+                base: $white,
+        ),
+        secondary:(
+                base: $lightGray,
+        ),
+        accent: (
+                base: $ocher,
+                hover: $ocher-light,
+        ),
+        primary: (
+                base: $black,
+                hover: $black-light,
+        ),
+        font: (
+                base: $black,
+                main: $white,
+        ),
+);
+
+
+$fonts: (
+        size: (
+                sm: 1em,
+                md: 1.5em,
+                lg: 2.25em,
+                lx: 4em,
+        ),
+        weight: (
+                tiny: 300,
+                normal: 500,
+                bold: 700,
+        ),
+);
+
+
+@function getColor($colorGroup, $shade) {
+  @return map-get(map-get($colors, $colorGroup), $shade);
+}
+
+@function getFont($fontGroup, $value) {
+  @return map-get(map-get($fonts, $fontGroup), $value);
+}
+
+
