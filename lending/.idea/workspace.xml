@@ -5,28 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9a74db1f-92db-462d-a0dc-e32b441a7e26" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/lending.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/watcherTasks.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/store/media.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/01_pages/LendingPage/LendingPage.module.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/02_blocks/01_TopNav/TopNav.module.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/02_blocks/02_FirstMain/FirstMain.module.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/02_blocks/02_FirstMain/FirstMain.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/04_shared/BaseButton/BaseButton.module.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/04_shared/BaseButton/BaseButton.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/04_shared/BaseButton/interfaces.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/04_shared/BaseMain/BaseMain.module.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/04_shared/BaseMain/BaseMain.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/04_shared/BaseWrapper/BaseWrapper.module.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/04_shared/BaseWrapper/BaseWrapper.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/styles/mixins/mixins.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/styles/reset/reset.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/styles/variables/varaibles.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/02_blocks/01_TopNav/TopNav.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/components/02_blocks/01_TopNav/TopNav.module.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/02_blocks/02_FirstMain/FirstMain.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/components/02_blocks/02_FirstMain/FirstMain.module.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/02_blocks/02_FirstMain/FirstMain.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/02_blocks/02_FirstMain/FirstMain.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/04_shared/BaseMain/BaseMain.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/components/04_shared/BaseMain/BaseMain.module.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/04_shared/BaseMain/BaseMain.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/04_shared/BaseMain/BaseMain.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/styles/mixins/mixins.scss" beforeDir="false" afterPath="$PROJECT_DIR$/styles/mixins/mixins.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/styles/variables/varaibles.scss" beforeDir="false" afterPath="$PROJECT_DIR$/styles/variables/varaibles.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -59,23 +45,23 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "main",
-    "last_opened_file_path": "/home/am/Desktop/MyProjects/freelance/yana_lending/lending/components/04_shared/BaseMain",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "yarn",
-    "npm.dev.executor": "Run",
-    "settings.editor.selected.configurable": "editing.templates",
-    "ts.external.directory.path": "/home/am/Desktop/MyProjects/freelance/yana_lending/lending/node_modules/typescript/lib",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/am/Desktop/MyProjects/freelance/yana_lending/lending/components/04_shared/BaseMain&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;yarn&quot;,
+    &quot;npm.dev.executor&quot;: &quot;Run&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;editing.templates&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;/home/am/Desktop/MyProjects/freelance/yana_lending/lending/node_modules/typescript/lib&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/components/04_shared/BaseMain" />
@@ -122,7 +108,9 @@
       <workItem from="1704283034450" duration="21516000" />
       <workItem from="1704312081095" duration="8642000" />
       <workItem from="1704368689410" duration="12802000" />
-      <workItem from="1704383615360" duration="10125000" />
+      <workItem from="1704383615360" duration="10462000" />
+      <workItem from="1704398166267" duration="345000" />
+      <workItem from="1704438596576" duration="16165000" />
     </task>
     <servers />
   </component>

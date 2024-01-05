@@ -14,7 +14,7 @@ $base-var-2: min(625px, 94vw);
 
   &_left {
     @extend .BaseMain;
-    @include breakpoint(screen660) {
+    @include breakpoint(screen768) {
       grid-template-rows: 1fr;
       grid-template-columns: 1fr 1fr;
       height: auto;
@@ -27,7 +27,7 @@ $base-var-2: min(625px, 94vw);
 
   &_right {
     @extend .BaseMain;
-    @include breakpoint(screen660) {
+    @include breakpoint(screen768) {
       grid-template-rows: 1fr;
       grid-template-columns: 1fr 1fr;
       height: auto;
@@ -51,7 +51,7 @@ $base-var-2: min(625px, 94vw);
     justify-content: flex-start;
     background-color: #b43c4e;
     @extend .GridCell;
-    @include breakpoint(screen660) {
+    @include breakpoint(screen768) {
       justify-content: center;
     }
   }
@@ -61,7 +61,7 @@ $base-var-2: min(625px, 94vw);
     justify-content: flex-end;
     background-color: #CC7951;
     @extend .GridCell;
-    @include breakpoint(screen660) {
+    @include breakpoint(screen768) {
       justify-content: center;
     }
   }
@@ -78,7 +78,7 @@ $base-var-2: min(625px, 94vw);
 
   &__text {
     @extend .ContentBlock;
-    @include breakpoint(screen660) {
+    @include breakpoint(screen768) {
       width: $base-var-2;
       height: auto;
     }
@@ -86,7 +86,7 @@ $base-var-2: min(625px, 94vw);
 
   &__photo {
     @extend .ContentBlock;
-    @include breakpoint(screen660) {
+    @include breakpoint(screen768) {
       width: $base-var-2;
       height: $base-var-2;
     }

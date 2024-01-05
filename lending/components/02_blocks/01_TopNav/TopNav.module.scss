@@ -23,14 +23,14 @@
     @include breakpoint(screen1600) {
       display: flex;
     }
-    @include breakpoint(screen1048) {
+    @include breakpoint(screen1024) {
       display: none;
     }
 
     &_norrow {
       @extend .Group__left;
       display: none;
-      @include breakpoint(screen1048) {
+      @include breakpoint(screen1024) {
         display: flex;
       }
     }

@@ -1,3 +1,23 @@
 @import '~global_styles';
+//padding-top: calc(1em*0.001);
 
 
+
+.FirstMainText__h1{
+  @include fonts(superHeader);
+}
+
+
+.FirstMainText__h2{
+  @include fonts(regularHeader);
+}
+
+
+.FirstMainText__p{
+  @include fonts(regular);
+}
+
+
+.FirstMainText__pb{
+  @include fonts(regular-bold);
+}
