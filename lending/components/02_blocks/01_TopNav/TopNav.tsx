@@ -2,7 +2,7 @@
 import React, {useState} from 'react';
 import {BaseButton} from "~shared/BaseButton/BaseButton";
 import styles from "./TopNav.module.scss"
-import {useMedia} from "../../../app/store/media";
+import {useMedia} from "../../../app/store/socials";
 
 
 export const TopNav: React.FC = ({}) => {

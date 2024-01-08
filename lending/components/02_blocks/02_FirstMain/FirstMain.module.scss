@@ -2,22 +2,42 @@
 //padding-top: calc(1em*0.001);
 
 
-
-.FirstMainText__h1{
+.FirstMainText__h1 {
   @include fonts(superHeader);
 }
 
 
-.FirstMainText__h2{
+.FirstMainText__h2 {
   @include fonts(regularHeader);
 }
 
 
-.FirstMainText__p{
+.FirstMainText__p {
+  display: block;
+  //padding-top: 32px;
+  @include interpolation-pt(32px,
+    $x1600: 32px,
+    $x1280: 32px,
+    $x1024: 24px,
+    $x960: 24px,
+    $x768: 16px,
+    $x640: 16px,
+    $x480: 16px,
+    $x320: 16px,
+  );
   @include fonts(regular);
 }
 
 
-.FirstMainText__pb{
+.FirstMainText__pb {
+  @include interpolation-pt(32px,
+  $x1600: 32px,
+  $x1280: 32px,
+  $x1024: 24px,
+  $x960: 24px,
+  $x768: 16px,
+  $x640: 16px,
+  $x480: 16px,
+  $x320: 16px,);
   @include fonts(regular-bold);
 }

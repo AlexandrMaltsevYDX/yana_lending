@@ -50,19 +50,55 @@
   } @else if $set == superHeader {
     font-weight: getFont(weight, bold);
     color: getColor(font, base);
-    @include interpolation-fonts(getFont(size, lx), $x1600:1, $x1280:2.6, $x1024:4, $x960: 5);
+    @include interpolation-font-px(getFont(size, lx),
+    $x1600: 56px,
+    $x1280: 48px,
+    $x1024: 40px,
+    $x960: 32px,
+    $x768: 40px,
+    $x640: 40px,
+    $x480: 40px,
+    $x320: 40px,
+    );
   } @else if $set == regularHeader {
     font-weight: getFont(weight, bold);
     color: getColor(font, base);
-    @include interpolation-fonts(getFont(size, lg), $x1600:1, $x1024:1.5, $x960:2.1);
+    @include interpolation-font-px(getFont(size, lg),
+    $x1600: 32px,
+    $x1280: 32px,
+    $x1024: 24px,
+    $x960: 24px,
+    $x768: 24px,
+    $x640: 24px,
+    $x480: 24px,
+    $x320: 24px,
+    );
   } @else if $set == regular {
     font-weight: getFont(weight, normal);
     color: getColor(font, base);
-    @include interpolation-fonts(getFont(size, md));
+    @include interpolation-font-px(getFont(size, md),
+    $x1600: 24px,
+    $x1280: 24px,
+    $x1024: 24px,
+    $x960: 16px,
+    $x768: 16px,
+    $x640: 16px,
+    $x480: 16px,
+    $x320: 16px,
+    );
   } @else if $set == regular-bold {
     font-weight: getFont(weight, bold);
     color: getColor(font, base);
-    @include interpolation-fonts(getFont(size, md));
+    @include interpolation-font-px(getFont(size, md),
+    $x1600: 24px,
+    $x1280: 24px,
+    $x1024: 24px,
+    $x960: 24px,
+    $x768: 24px,
+    $x640: 24px,
+    $x480: 24px,
+    $x320: 24px,
+    );
   }
 }
 
@@ -102,6 +138,141 @@
   }
   @include breakpoint(screen320) {
     font-size: calc($fontSize * pow(0.9, $x320));
+  }
+}
+
+
+@mixin interpolation-pt(
+  $x0:0,
+  $x1600:$x0,
+  $x1280:$x1600,
+  $x1024:$x1280,
+  $x960:$x1024,
+  $x768:$x960,
+  $x640:$x768,
+  $x480:$x640,
+  $x320:$x480,
+) {
+  padding-top: $x0;
+  @include breakpoint(screen1600) {
+    padding-top: $x1600;
+  }
+  @include breakpoint(screen1280) {
+    padding-top: $x1280;
+  }
+  @include breakpoint(screen1024) {
+    padding-top: $x1024;
+  }
+  @include breakpoint(screen960) {
+    padding-top: $x960;
+  }
+  @include breakpoint(screen768) {
+    padding-top: $x768;
+  }
+  @include breakpoint(screen640) {
+    padding-top: $x640;
+  }
+  @include breakpoint(screen480) {
+    padding-top: $x480;
+  }
+  @include breakpoint(screen320) {
+    padding-top: $x320;
+  }
+}
+
+
+@mixin interpolation-font-px(
+  $x0:0,
+  $x1600:$x0,
+  $x1280:$x1600,
+  $x1024:$x1280,
+  $x960:$x1024,
+  $x768:$x960,
+  $x640:$x768,
+  $x480:$x640,
+  $x320:$x480,
+) {
+  font-size: $x0;
+  @include breakpoint(screen1600) {
+    font-size: $x1600;
+  }
+  @include breakpoint(screen1280) {
+    font-size: $x1280;
+  }
+  @include breakpoint(screen1024) {
+    font-size: $x1024;
+  }
+  @include breakpoint(screen960) {
+    font-size: $x960;
+  }
+  @include breakpoint(screen768) {
+    font-size: $x768;
+  }
+  @include breakpoint(screen640) {
+    font-size: $x640;
+  }
+  @include breakpoint(screen480) {
+    font-size: $x480;
+  }
+  @include breakpoint(screen320) {
+    font-size: $x320;
+  }
+}
+
+
+@mixin interpolation-wh-px(
+  $x0:0,
+  $x1600:$x0,
+  $x1280:$x1600,
+  $x1024:$x1280,
+  $x960:$x1024,
+  $x768:$x960,
+  $x640:$x768,
+  $x480:$x640,
+  $x320:$x480,
+) {
+  $val: $x0;
+  width: $val;
+  height: $val;
+  @include breakpoint(screen1600) {
+    $val: $x1600;
+    width: $val;
+    height: $val;
+  }
+  @include breakpoint(screen1280) {
+    $val: $x1280;
+    width: $val;
+    height: $val;
+  }
+  @include breakpoint(screen1024) {
+    $val: $x1024;
+    width: $val;
+    height: $val;
+  }
+  @include breakpoint(screen960) {
+    $val: $x960;
+    width: $val;
+    height: $val;
+  }
+  @include breakpoint(screen768) {
+    $val: $x768;
+    width: $val;
+    height: $val;
+  }
+  @include breakpoint(screen640) {
+    $val: $x640;
+    width: $val;
+    height: $val;
+  }
+  @include breakpoint(screen480) {
+    $val: $x480;
+    width: $val;
+    height: $val;
+  }
+  @include breakpoint(screen320) {
+    $val: $x320;
+    width: $val;
+    height: $val;
   }
 }
 

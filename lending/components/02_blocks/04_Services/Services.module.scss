@@ -1,0 +1,96 @@
+@import '~global_styles';
+
+
+.ServicesGrid {
+  width: 100%;
+  display: grid;
+  gap: 10px;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  grid-template:
+          "header header"
+          "service_1 service_3"
+          "service_2 service_4";
+
+  @include breakpoint(screen640) {
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr;
+    grid-template:
+          "header"
+          "service_1"
+          "service_2"
+          "service_3"
+          "service_4";
+  }
+
+  &__Cell {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 24px;
+    border-radius: 16px;
+    border: 1px solid getColor(border, base);
+
+    &_h2{
+      width: 100%;
+      grid-area: header;
+      display: flex;
+      justify-content: center;
+      text-align: center;
+      padding-bottom: 16px;
+      @include fonts(regularHeader);
+    }
+
+    &_1 {
+      @extend .ServicesGrid__Cell;
+      grid-area: service_1;
+      background-color: #CC7951;
+    }
+
+    &_2 {
+      @extend .ServicesGrid__Cell;
+      grid-area: service_2;
+      background-color: #CC7951;
+    }
+
+    &_3 {
+      @extend .ServicesGrid__Cell;
+      grid-area: service_3;
+      background-color: #b43c4e;
+    }
+
+    &_4 {
+      @extend .ServicesGrid__Cell;
+      grid-area: service_4;
+      background-color: #b43c4e;
+    }
+  }
+
+
+}
+
+.ServicesGrid_1 {
+  background-color: red;
+}
+
+.ServiceText {
+  &__pb {
+    @include fonts(regular-bold);
+  }
+
+  &__p {
+    display: block;
+    //padding-top: 32px;
+    @include interpolation-pt(32px,
+    $x1600: 32px,
+    $x1280: 32px,
+    $x1024: 24px,
+    $x960: 24px,
+    $x768: 16px,
+    $x640: 16px,
+    $x480: 16px,
+    $x320: 16px,
+    );
+    @include fonts(regular);
+  }
+}

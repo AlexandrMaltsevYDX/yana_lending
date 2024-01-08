@@ -1,0 +1,43 @@
+@import '~global_styles';
+
+.SecondMainText {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+
+  &__block_1 {
+    @extend .SecondMainText;
+  }
+
+  &__block_2 {
+    @extend .SecondMainText;
+    @include interpolation-pt(48px,
+    $x1600: 32px,
+    $x1280: 32px,
+    $x1024: 32px,
+    $x960: 24px,
+    $x768: 16px,
+    $x640: 16px,
+    $x480: 16px,
+    $x320: 16px,);
+
+  }
+
+  &__h2 {
+    @include fonts(regularHeader);
+  }
+
+  &__p {
+    display: block;
+    @include interpolation-pt(24px,
+    $x1600: 24px,
+    $x1280: 24px,
+    $x1024: 24px,
+    $x960: 24px,
+    $x768: 16px,
+    $x640: 16px,
+    $x480: 16px,
+    $x320: 16px,);
+    @include fonts(regular);
+  }
+}
