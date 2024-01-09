@@ -1,15 +1,58 @@
-.Questions{
+@import '~global_styles';
+
+
+.Questions {
   display: flex;
   flex-direction: column;
   gap: 24px;
-  .Question{
+  width: 100%;
+
+  .Question {
     display: flex;
     flex-direction: column;
-    &__question{
+    padding: 0px 40px 0px 40px;
+    cursor: pointer;
+
+
+    &__question {
       display: flex;
       flex-direction: row;
       justify-content: space-between;
       align-items: center;
+      width: 100%;
+      padding: 16px 0px 16px 0px;
+      border-bottom: 1px solid getColor(border, base);
+
+      &_pb {
+        @include fonts(regular-bold)
+      }
+    }
+
+    &__content_expanded {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      padding: 16px 0px 24px 0px;
+
+
+      &_p {
+        @include interpolation-font-px(24px,
+        $x1600: 24px,
+        $x1280: 24px,
+        $x1024: 24px,
+        $x960: 16px,
+        $x768: 16px,
+        $x640: 16px,
+        $x480: 16px,
+        $x320: 16px,
+        );
+      }
+    }
+
+    &__content_collapsed {
+      display: none;
+
     }
   }
 }

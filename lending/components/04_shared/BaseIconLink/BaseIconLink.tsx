@@ -1,10 +1,16 @@
-import React, {ReactNode} from 'react';
+import React from 'react';
 import styles from './BaseIconLink.module.scss';
 import {SocialLinkProps} from "../../../app/store/socials";
 import Link from "next/link";
 
 
-export const BaseIconLink: React.FC<SocialLinkProps> = ({id,icon, url, alt, onClick}) => {
+export const BaseIconLink: React.FC<SocialLinkProps> = ({
+                                                            id,
+                                                            icon,
+                                                            url,
+                                                            alt,
+                                                            onClick
+                                                        }) => {
     return (
         <Link id={id} onClick={onClick} href={url} prefetch={false}>
             <div className={styles.Icon}>

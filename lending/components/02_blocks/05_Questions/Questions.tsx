@@ -24,7 +24,7 @@ export const Questions: React.FC = ({}) => {
                     header={element.header}
                     content={element.content}
                     number={element.number}
-                    onClick={test}
+                    toggle={actionToggleState}
                 />
             ))}
             </div>
@@ -33,7 +33,7 @@ export const Questions: React.FC = ({}) => {
 }
 
 interface QuestionPropsComponent extends QuestionProps{
-    onClick?: ()=>void
+    toggle: (number: string)=>void
 }
 
 export const Question: React.FC<QuestionPropsComponent> = ({
@@ -41,19 +41,22 @@ export const Question: React.FC<QuestionPropsComponent> = ({
                                                       state,
                                                       header,
                                                       content,
-                                                      onClick,
+                                                      toggle,
                                                   }) => {
     const icon = QuestionIcon[state]
     const url = `#question_${number}`
     const id = `question_${number}`
+    function onClick(){
+        return toggle(number)
+    }
     return (
         <div className={styles.Question}>
-            <div className={styles.Question__question}>
+            <div onClick={onClick} className={styles.Question__question}>
                 <div className={styles.Question__question_pb}>{header}</div>
-                <BaseIconLink id={id} onClick={onClick} icon={icon} url={url} alt={state}/>
+                <BaseIconLink id={id} icon={icon} url={url} alt={state}/>
             </div>
             <div className={styles[`Question__content_${state}`]}>
-                <div className={styles.Question__content_p}>{content}</div>
+                <div className={styles.Question__content_expanded_p}>{content}</div>
             </div>
         </div>
     )
