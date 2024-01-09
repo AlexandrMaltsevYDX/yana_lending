@@ -2,9 +2,11 @@ import {create} from "zustand";
 
 
 export interface SocialLinkProps {
+    id?: string;
     icon: string;
     url: string;
     alt: string;
+    onClick?: ()=>void
 }
 
 export interface SocialStoreInterface {

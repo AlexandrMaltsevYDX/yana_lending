@@ -1,0 +1,15 @@
+.Questions{
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  .Question{
+    display: flex;
+    flex-direction: column;
+    &__question{
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+    }
+  }
+}

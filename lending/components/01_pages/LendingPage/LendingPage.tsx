@@ -5,6 +5,7 @@ import {FirstMain} from "~blocks/02_FirstMain/FirstMain";
 import styles from "./LendingPage.module.scss"
 import {SecondMain} from "~blocks/03_SecondMain/SecondMain";
 import {Services} from "~blocks/04_Services/Services";
+import {Questions} from "~blocks/05_Questions/Questions";
 
 
 const LendingPage: React.FC = ({}) => {
@@ -14,6 +15,7 @@ const LendingPage: React.FC = ({}) => {
             <FirstMain/>
             <SecondMain/>
             <Services/>
+            <Questions/>
         </div>
     );
 };
