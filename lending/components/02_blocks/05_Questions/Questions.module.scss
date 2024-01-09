@@ -7,6 +7,16 @@
   gap: 24px;
   width: 100%;
 
+  &_h2 {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    text-align: center;
+    padding-left: 40px;
+    padding-bottom:  24px;
+    @include fonts(regularHeader);
+  }
+
   .Question {
     display: flex;
     flex-direction: column;
@@ -24,7 +34,8 @@
       border-bottom: 1px solid getColor(border, base);
 
       &_pb {
-        @include fonts(regular-bold)
+        @include fonts(regular-bold);
+        padding-right: 40px;
       }
     }
 
@@ -33,7 +44,7 @@
       flex-direction: row;
       justify-content: space-between;
       align-items: center;
-      padding: 16px 0px 24px 0px;
+      padding: 16px 80px 24px 0px;
 
 
       &_p {

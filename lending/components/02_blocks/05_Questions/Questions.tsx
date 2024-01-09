@@ -17,23 +17,26 @@ export const Questions: React.FC = ({}) => {
     return (
         <BaseWrapper>
             <div className={styles.Questions}>
-            {questions.map((element, index) => (
-                <Question
-                    key={index}
-                    state={element.state}
-                    header={element.header}
-                    content={element.content}
-                    number={element.number}
-                    toggle={actionToggleState}
-                />
-            ))}
+                <h2 className={styles.Questions_h2}>
+                    Частые вопросы
+                </h2>
+                {questions.map((element, index) => (
+                    <Question
+                        key={index}
+                        state={element.state}
+                        header={element.header}
+                        content={element.content}
+                        number={element.number}
+                        toggle={actionToggleState}
+                    />
+                ))}
             </div>
         </BaseWrapper>
     )
 }
 
-interface QuestionPropsComponent extends QuestionProps{
-    toggle: (number: string)=>void
+interface QuestionPropsComponent extends QuestionProps {
+    toggle: (number: string) => void
 }
 
 export const Question: React.FC<QuestionPropsComponent> = ({
