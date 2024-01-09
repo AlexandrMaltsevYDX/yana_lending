@@ -1,14 +1,8 @@
 <svg width="56" height="56" viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg">
-<rect width="56" height="56" fill="#F0F0F0"/>
-<g clip-path="url(#clip0_0_1)">
-<rect width="1920" height="3888" transform="translate(-1606 -2608)" fill="white"/>
-<rect x="-0.5" y="0.5" width="1478" height="109" rx="19.5" transform="matrix(-1 0 0 1 93 -27)" stroke="#C9C9C9"/>
-<rect width="56" height="56" rx="28" fill="#CC7951"/>
-<path d="M39 28L40.0186 26.9814L41.0371 28L40.0186 29.0186L39 28ZM17 29.4405C16.2044 29.4405 15.5595 28.7956 15.5595 28C15.5595 27.2044 16.2044 26.5595 17 26.5595V29.4405ZM32.6852 19.6481L40.0186 26.9814L37.9814 29.0186L30.6481 21.6852L32.6852 19.6481ZM40.0186 29.0186L32.6852 36.3519L30.6481 34.3148L37.9814 26.9814L40.0186 29.0186ZM39 29.4405H17V26.5595H39V29.4405Z" fill="white"/>
+<g id="Frame 46">
+<rect id="Rectangle 198" width="56" height="56" rx="28" fill="#CC7951"/>
+<g id="Arrow_alt_lright">
+<path id="Vector 9" d="M39 28L40.0186 26.9814L41.0371 28L40.0186 29.0186L39 28ZM17 29.4405C16.2044 29.4405 15.5595 28.7956 15.5595 28C15.5595 27.2044 16.2044 26.5595 17 26.5595V29.4405ZM32.6852 19.6481L40.0186 26.9814L37.9814 29.0186L30.6481 21.6852L32.6852 19.6481ZM40.0186 29.0186L32.6852 36.3519L30.6481 34.3148L37.9814 26.9814L40.0186 29.0186ZM39 29.4405H17V26.5595H39V29.4405Z" fill="white"/>
 </g>
-<defs>
-<clipPath id="clip0_0_1">
-<rect width="1920" height="3888" fill="white" transform="translate(-1606 -2608)"/>
-</clipPath>
-</defs>
+</g>
 </svg>

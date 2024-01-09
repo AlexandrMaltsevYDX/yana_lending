@@ -1,7 +1,7 @@
 import React, {ReactNode} from 'react';
 import styles from './Services.module.scss';
-import Link from "next/link";
 import {BaseWrapper} from "~shared/BaseWrapper/BaseWrapper";
+import {BaseIconLink} from "~shared/BaseIconLink/BaseIconLink";
 
 
 interface ServicesProps {
@@ -20,6 +20,11 @@ export const Services: React.FC<ServicesProps> = ({children}) => {
                 {services.map((service, index) => (
                     <Service key={index} number={service}/>
                 ))}
+                <ServiceButton
+                    icon="/svg/arrow.svg"
+                    url="https://yana-lending.vercel.app/"
+                    alt="Запись на консультацию"
+                />
             </div>
         </BaseWrapper>
     )
@@ -44,25 +49,6 @@ const Service: React.FC<ServiceProps> = ({number}) => {
     )
 }
 
-
-export interface ServiceLinkProps {
-    icon: string;
-    url: string;
-    alt: string;
-}
-
-const ServiceIcon: React.FC<ServiceLinkProps> = ({icon, url, alt}) => {
-    return (
-        <Link href={url} prefetch={false}>
-            <div className={styles.Icon}>
-                <img className={styles.Icon} src={icon} alt={alt}/>
-            </div>
-        </Link>
-
-    )
-}
-
-
 export interface ServiceButtonProps {
     icon: string;
     url: string;
@@ -71,9 +57,9 @@ export interface ServiceButtonProps {
 
 const ServiceButton: React.FC<ServiceButtonProps> = ({icon, url, alt}) => {
     return (
-    <div className={styles.ServicesGrid__Cell_Button}>
-        <div className={styles.ServiceText__pb}>Заголовок заг</div>
-        <ServiceIcon icon={icon} url={url} alt={alt}/>
-    </div>
+        <div className={styles.ServicesGrid__Cell_Button}>
+            <div className={styles.ServiceText__pb}>Записаться на консультацию</div>
+            <BaseIconLink icon={icon} url={url} alt={alt}/>
+        </div>
     )
 }
