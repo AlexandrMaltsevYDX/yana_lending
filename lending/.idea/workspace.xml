@@ -6,14 +6,12 @@
   <component name="ChangeListManager">
     <list default="true" id="9a74db1f-92db-462d-a0dc-e32b441a7e26" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/01_pages/LendingPage/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/app/store/services.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/02_blocks/01_TopNav/index.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/02_blocks/02_FirstMain/index.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/02_blocks/02_FirstMain/interfaces.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/store/services.ts" beforeDir="false" afterPath="$PROJECT_DIR$/app/store/services.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/components/02_blocks/04_Services/Services.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/components/02_blocks/04_Services/Services.module.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/components/02_blocks/04_Services/Services.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/02_blocks/04_Services/Services.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/04_shared/BaseButton/interfaces.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/svg/arrow.svg" beforeDir="false" afterPath="$PROJECT_DIR$/public/svg/arrow.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/02_blocks/05_Questions/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/components/02_blocks/05_Questions/Questions.module.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/02_blocks/05_Questions/interfaces.ts" beforeDir="false" afterPath="$PROJECT_DIR$/components/02_blocks/05_Questions/Questions.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/02_blocks/05_Questions/style.ts" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -123,7 +121,7 @@
       <workItem from="1704744561162" duration="8248000" />
       <workItem from="1704787705716" duration="11000" />
       <workItem from="1704787771432" duration="12000" />
-      <workItem from="1704826340055" duration="4162000" />
+      <workItem from="1704826340055" duration="5171000" />
     </task>
     <servers />
   </component>

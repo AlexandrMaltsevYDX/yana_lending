@@ -2,15 +2,13 @@ import React, {ReactNode} from 'react';
 import styles from './Services.module.scss';
 import {BaseWrapper} from "~shared/BaseWrapper/BaseWrapper";
 import {BaseIconLink} from "~shared/BaseIconLink/BaseIconLink";
+import {useServices, ServicesProps} from "../../../app/store/services";
 
 
-interface ServicesProps {
-    children?: ReactNode;
-}
 
-export const Services: React.FC<ServicesProps> = ({children}) => {
-    const services = ["1", "2", "3", "4"]
 
+export const Services: React.FC = ({}) => {
+    const {services: services} = useServices()
     return (
         <BaseWrapper>
             <div className={styles.ServicesGrid}>
@@ -18,7 +16,7 @@ export const Services: React.FC<ServicesProps> = ({children}) => {
                     Консультации психолога
                 </h2>
                 {services.map((service, index) => (
-                    <Service key={index} number={service}/>
+                    <Service key={index} number={service.number} header={service.header} content={service.content}/>
                 ))}
                 <ServiceButton
                     icon="/svg/arrow.svg"
@@ -31,19 +29,14 @@ export const Services: React.FC<ServicesProps> = ({children}) => {
 }
 
 
-interface ServiceProps {
-    number?: string;
-}
 
-const Service: React.FC<ServiceProps> = ({number}) => {
+
+const Service: React.FC<ServicesProps> = ({number, header, content}) => {
     return (
         <div className={styles[`ServicesGrid__Cell_${number}`]}>
-            <div className={styles.ServiceText__pb}>Заголовок заг</div>
+            <div className={styles.ServiceText__pb}>{header}</div>
             <div className={styles.ServiceText__p}>
-                Когнитивно-поведенческая терапия (КПТ) —
-                доказанный метод для изменения негативных
-                психологическое состояние.
-                психологическое состояние.
+                {content}
             </div>
         </div>
     )
