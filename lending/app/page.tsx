@@ -1,6 +1,8 @@
 "use client"
 import styles from './page.module.scss'
 import {LendingPage} from '~pages/index'
+// change this
+
 
 interface Breakpoints {
     [key: string]: Array<number>;
