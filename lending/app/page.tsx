@@ -1,7 +1,6 @@
 "use client"
 import styles from './page.module.scss'
 import {LendingPage} from '~pages/index'
-import {useEffect} from "react";
 
 interface Breakpoints {
     [key: string]: Array<number>;
