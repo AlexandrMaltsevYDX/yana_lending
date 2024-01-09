@@ -45,14 +45,6 @@ const Service: React.FC<ServiceProps> = ({number}) => {
 }
 
 
-const ServiceButton: React.FC<ServiceProps> = ({}) => {
-    return (
-        <React.Fragment>
-            <div className={styles.ServiceText__pb}>Заголовок заг</div>
-        </React.Fragment>
-    )
-}
-
 export interface ServiceLinkProps {
     icon: string;
     url: string;
@@ -67,5 +59,21 @@ const ServiceIcon: React.FC<ServiceLinkProps> = ({icon, url, alt}) => {
             </div>
         </Link>
 
+    )
+}
+
+
+export interface ServiceButtonProps {
+    icon: string;
+    url: string;
+    alt: string;
+}
+
+const ServiceButton: React.FC<ServiceButtonProps> = ({icon, url, alt}) => {
+    return (
+    <div className={styles.ServicesGrid__Cell_Button}>
+        <div className={styles.ServiceText__pb}>Заголовок заг</div>
+        <ServiceIcon icon={icon} url={url} alt={alt}/>
+    </div>
     )
 }

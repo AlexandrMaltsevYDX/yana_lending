@@ -1,9 +1,9 @@
 import React from 'react';
 import {BaseMain} from "~shared/BaseMain/BaseMain";
 import styles from "./FirstMain.module.scss";
-import iconStyles from "./Social.module.scss";
 import Link from 'next/link'
 import {SocialLinkProps, SocialStoreInterface, useSocial} from "../../../app/store/socials";
+import {BaseIconLink} from "~shared/BaseIconLink/BaseIconLink";
 
 interface FirstMainProps {
     children?: React.ReactNode;
@@ -39,24 +39,14 @@ const FirstMainText: React.FC = ({}) => {
     )
 }
 
-const SocialIcon: React.FC<SocialLinkProps> = ({icon, url, alt}) => {
-    return (
-        <Link href={url} prefetch={false}>
-            <div className={iconStyles.Icon}>
-                <img className={iconStyles.Icon} src={icon} alt={alt}/>
-            </div>
-        </Link>
-
-    )
-}
 
 export const SocialIconsBlock: React.FC<SocialStoreInterface> = ({links}) => {
     return (
         <React.Fragment>
-            <div className={iconStyles.SocialIconsBlock}>
+            <div className={styles.SocialIconsBlock}>
 
             {links.map((link, index) => (
-                <SocialIcon key={index} icon={link.icon} url={link.url} alt={link.alt}/>
+                <BaseIconLink key={index} icon={link.icon} url={link.url} alt={link.alt}/>
             ))}
             </div>
         </React.Fragment>

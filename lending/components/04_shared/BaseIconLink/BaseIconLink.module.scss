@@ -1,0 +1,14 @@
+@import '~global_styles';
+
+
+.Icon {
+  @include interpolation-wh-px(40px,
+    $x1600: 40px,
+    $x1280: 32px,
+    $x1024: 32px,
+    $x960: 32px,
+    $x768: 32px,
+    $x640: 32px,
+    $x480: 32px,
+    $x320: 32px,)
+}

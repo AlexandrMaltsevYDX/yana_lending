@@ -41,3 +41,19 @@
   $x320: 16px,);
   @include fonts(regular-bold);
 }
+
+.SocialIconsBlock {
+  display: flex;
+  flex-direction: row;
+  gap: 24px;
+  @include interpolation-pt(56px,
+    $x1600: 56px,
+    $x1280: 32px,
+    $x1024: 24px,
+    $x960: 32px,
+    $x768: 32px,
+    $x640: 32px,
+    $x480: 32px,
+    $x320: 32px,
+  )
+}

@@ -5,7 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9a74db1f-92db-462d-a0dc-e32b441a7e26" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/app/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/page.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/04_shared/BaseIconLink/BaseIconLink.module.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/04_shared/BaseIconLink/BaseIconLink.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/02_blocks/02_FirstMain/FirstMain.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/components/02_blocks/02_FirstMain/FirstMain.module.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/02_blocks/02_FirstMain/FirstMain.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/02_blocks/02_FirstMain/FirstMain.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/02_blocks/02_FirstMain/Social.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/components/02_blocks/02_FirstMain/Social.module.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/02_blocks/04_Services/Services.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/02_blocks/04_Services/Services.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -115,11 +121,22 @@
       <workItem from="1704744561162" duration="8248000" />
       <workItem from="1704787705716" duration="11000" />
       <workItem from="1704787771432" duration="12000" />
-      <workItem from="1704826340055" duration="1165000" />
+      <workItem from="1704826340055" duration="2924000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/components/02_blocks/04_Services/Services.tsx</url>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
