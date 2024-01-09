@@ -1,7 +1,6 @@
 "use client"
 import styles from './page.module.scss'
 import {LendingPage} from '~pages/index'
-import {useMedia} from "./store/socials";
 import {useEffect} from "react";
 
 interface Breakpoints {
