@@ -1,0 +1,33 @@
+@import '~global_styles';
+
+.Rules {
+  &__wrapper {
+    width: 100%;
+    padding-left: 40px;
+    padding-right: 250px;
+    @include interpolation-pr(
+                    250px,
+            $x1600: 250px,
+            $x1280: 150px,
+            $x1024: 100px,
+            $x960: 40px,
+    );
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+
+  &__h2 {
+    @include fonts(regular-bold);
+  }
+
+  &__pb {
+    padding-top: 64px;
+    @include fonts(regular-bold);
+  }
+
+  &__p {
+    padding-top: 24px;
+    @include fonts(regular);
+  }
+}

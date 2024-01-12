@@ -6,8 +6,11 @@
   <component name="ChangeListManager">
     <list default="true" id="9a74db1f-92db-462d-a0dc-e32b441a7e26" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/02_blocks/05_Questions/Questions.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/components/02_blocks/05_Questions/Questions.module.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/02_blocks/05_Questions/Questions.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/02_blocks/05_Questions/Questions.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/01_pages/LendingPage/LendingPage.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/01_pages/LendingPage/LendingPage.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/02_blocks/06_Rules/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/components/02_blocks/06_Rules/Rules.module.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/02_blocks/06_Rules/interfaces.ts" beforeDir="false" afterPath="$PROJECT_DIR$/components/02_blocks/06_Rules/Rules.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/02_blocks/06_Rules/style.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/styles/mixins/mixins.scss" beforeDir="false" afterPath="$PROJECT_DIR$/styles/mixins/mixins.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -117,7 +120,9 @@
       <workItem from="1704744561162" duration="8248000" />
       <workItem from="1704787705716" duration="11000" />
       <workItem from="1704787771432" duration="12000" />
-      <workItem from="1704826340055" duration="16520000" />
+      <workItem from="1704826340055" duration="16665000" />
+      <workItem from="1704878029454" duration="2000" />
+      <workItem from="1705097281826" duration="3557000" />
     </task>
     <servers />
   </component>
@@ -129,7 +134,6 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/components/02_blocks/04_Services/Services.tsx</url>
-          <properties lambdaOrdinal="-1" />
           <option name="timeStamp" value="1" />
         </line-breakpoint>
       </breakpoints>

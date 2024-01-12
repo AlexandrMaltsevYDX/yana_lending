@@ -180,6 +180,44 @@
   }
 }
 
+@mixin interpolation-pr(
+  $x0:0,
+  $x1600:$x0,
+  $x1280:$x1600,
+  $x1024:$x1280,
+  $x960:$x1024,
+  $x768:$x960,
+  $x640:$x768,
+  $x480:$x640,
+  $x320:$x480,
+) {
+  padding-right: $x0;
+  @include breakpoint(screen1600) {
+    padding-right: $x1600;
+  }
+  @include breakpoint(screen1280) {
+    padding-right: $x1280;
+  }
+  @include breakpoint(screen1024) {
+    padding-right: $x1024;
+  }
+  @include breakpoint(screen960) {
+    padding-right: $x960;
+  }
+  @include breakpoint(screen768) {
+    padding-right: $x768;
+  }
+  @include breakpoint(screen640) {
+    padding-right: $x640;
+  }
+  @include breakpoint(screen480) {
+    padding-right: $x480;
+  }
+  @include breakpoint(screen320) {
+    padding-right: $x320;
+  }
+}
+
 
 @mixin interpolation-font-px(
   $x0:0,
