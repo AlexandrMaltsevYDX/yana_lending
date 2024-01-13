@@ -1,0 +1,32 @@
+@import '~global_styles';
+
+.Prices{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 30px;
+  @include px(40px);
+  &__h2{
+    @include fonts(regularHeader)
+  }
+  .Price{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    &__textBloc{
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      padding-right: 30px;
+      &__pb{
+        @include fonts(regular-bold)
+      }
+      &__p{
+        @include fonts(regular)
+      }
+    }
+    &__valueBlock{
+      min-width: 140px;
+    }
+  }
+}

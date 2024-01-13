@@ -8,6 +8,7 @@ import {Services} from "~blocks/04_Services/Services";
 import {Questions} from "~blocks/05_Questions/Questions";
 import {Result} from "postcss";
 import {Rules} from "~blocks/06_Rules/Rules";
+import {Prices} from "~blocks/07_Prices/Prices";
 
 
 const LendingPage: React.FC = ({}) => {
@@ -19,6 +20,7 @@ const LendingPage: React.FC = ({}) => {
             <Services/>
             <Questions/>
             <Rules/>
+            <Prices/>
         </div>
     );
 };

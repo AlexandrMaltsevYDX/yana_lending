@@ -5,12 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9a74db1f-92db-462d-a0dc-e32b441a7e26" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/components/02_blocks/07_Prices/Prices.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/components/01_pages/LendingPage/LendingPage.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/01_pages/LendingPage/LendingPage.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/02_blocks/06_Rules/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/components/02_blocks/06_Rules/Rules.module.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/02_blocks/06_Rules/interfaces.ts" beforeDir="false" afterPath="$PROJECT_DIR$/components/02_blocks/06_Rules/Rules.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/02_blocks/06_Rules/style.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/styles/mixins/mixins.scss" beforeDir="false" afterPath="$PROJECT_DIR$/styles/mixins/mixins.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/02_blocks/07_Prices/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/app/store/prices.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/02_blocks/07_Prices/interfaces.ts" beforeDir="false" afterPath="$PROJECT_DIR$/components/02_blocks/07_Prices/Prices.module.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/02_blocks/07_Prices/style.ts" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -74,6 +74,11 @@
       <recent name="$PROJECT_DIR$/public/svg" />
     </key>
   </component>
+  <component name="RunAnythingCache">
+    <option name="myCommands">
+      <command value="python" />
+    </option>
+  </component>
   <component name="RunManager">
     <configuration name="dev" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
       <package-json value="$PROJECT_DIR$/package.json" />
@@ -122,7 +127,11 @@
       <workItem from="1704787771432" duration="12000" />
       <workItem from="1704826340055" duration="16665000" />
       <workItem from="1704878029454" duration="2000" />
-      <workItem from="1705097281826" duration="3557000" />
+      <workItem from="1705097281826" duration="4306000" />
+      <workItem from="1705161615482" duration="1064000" />
+      <workItem from="1705162892239" duration="1154000" />
+      <workItem from="1705167737723" duration="2745000" />
+      <workItem from="1705174602982" duration="2104000" />
     </task>
     <servers />
   </component>
