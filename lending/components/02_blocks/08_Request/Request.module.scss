@@ -1,0 +1,26 @@
+@import '~global_styles';
+
+.Request{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  @include px(40px);
+  &_h2{
+    @include fonts(regularHeader)
+  }
+  &_socials{
+    @include interpolation-pt(48px);
+    gap: 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+}
+
+.RequestSocials{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 24px;
+}
