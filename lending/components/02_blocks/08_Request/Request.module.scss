@@ -5,8 +5,12 @@
   flex-direction: column;
   width: 100%;
   @include px(40px);
+  @include py(40px);
+  background-color: getColor(panel, base);
+  color: white;
   &_h2{
-    @include fonts(regularHeader)
+    @include fonts(regularHeader);
+     color: white;
   }
   &_socials{
     @include interpolation-pt(48px);
