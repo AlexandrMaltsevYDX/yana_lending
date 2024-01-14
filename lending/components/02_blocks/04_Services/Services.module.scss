@@ -45,25 +45,25 @@
     &_1 {
       @extend .ServicesGrid__Cell;
       grid-area: service_1;
-      background-color: #CC7951;
+      //background-color: #CC7951;
     }
 
     &_2 {
       @extend .ServicesGrid__Cell;
       grid-area: service_2;
-      background-color: #CC7951;
+      //background-color: #CC7951;
     }
 
     &_3 {
       @extend .ServicesGrid__Cell;
       grid-area: service_3;
-      background-color: #b43c4e;
+      //background-color: #b43c4e;
     }
 
     &_4 {
       @extend .ServicesGrid__Cell;
       grid-area: service_4;
-      background-color: #b43c4e;
+      //background-color: #b43c4e;
     }
 
     &_Button {
@@ -73,13 +73,13 @@
       justify-content: space-between;
       align-content: center;
       align-items: center;
-      background-color: rebeccapurple;
+      //background-color: rebeccapurple;
     }
   }
 }
 
 .ServicesGrid_1 {
-  background-color: red;
+  //background-color: red;
 }
 
 .ServiceText {

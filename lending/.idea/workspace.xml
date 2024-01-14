@@ -6,11 +6,11 @@
   <component name="ChangeListManager">
     <list default="true" id="9a74db1f-92db-462d-a0dc-e32b441a7e26" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/01_pages/LendingPage/LendingPage.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/01_pages/LendingPage/LendingPage.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/02_blocks/03_SecondMain/SecondMain.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/components/02_blocks/03_SecondMain/SecondMain.module.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/02_blocks/08_Request/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/components/02_blocks/08_Request/Request.module.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/02_blocks/08_Request/interfaces.ts" beforeDir="false" afterPath="$PROJECT_DIR$/components/02_blocks/08_Request/Request.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/02_blocks/08_Request/style.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/02_blocks/04_Services/Services.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/components/02_blocks/04_Services/Services.module.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/02_blocks/07_Prices/Prices.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/components/02_blocks/07_Prices/Prices.module.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/02_blocks/07_Prices/Prices.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/02_blocks/07_Prices/Prices.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/04_shared/BaseMain/BaseMain.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/components/04_shared/BaseMain/BaseMain.module.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/04_shared/BaseWrapper/BaseWrapper.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/components/04_shared/BaseWrapper/BaseWrapper.module.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -132,7 +132,8 @@
       <workItem from="1705162892239" duration="1154000" />
       <workItem from="1705167737723" duration="2745000" />
       <workItem from="1705174602982" duration="8116000" />
-      <workItem from="1705187444133" duration="1617000" />
+      <workItem from="1705187444133" duration="2030000" />
+      <workItem from="1705229469028" duration="2778000" />
     </task>
     <servers />
   </component>

@@ -23,12 +23,12 @@ export const Prices: React.FC = ({}) => {
 const Price: React.FC<PriceProps> = ({service, content, value}) => {
     return (
         <div className={styles.Price}>
-            <div className={styles.Price__textBloc}>
-                <p className={styles.Price__textBloc__pb}>{service}</p>
-                <p className={styles.Price__textBloc__p}>{content}</p>
+            <div className={styles.Price__left}>
+                <p className={styles.Price__pb}>{service}</p>
+                <p className={styles.Price__p}>{value}</p>
             </div>
-            <div className={styles.Price__valueBlock}>
-                <p className={styles.Price__valueBlock__p}>{value}</p>
+            <div className={styles.Price__right}>
+                <p className={styles.Price__p}>{content}</p>
             </div>
         </div>
     )

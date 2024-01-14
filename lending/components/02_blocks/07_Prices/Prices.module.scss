@@ -1,32 +1,52 @@
 @import '~global_styles';
 
-.Prices{
+.Prices {
   display: flex;
   flex-direction: column;
   width: 100%;
   gap: 30px;
   @include px(40px);
-  &__h2{
+
+  &__h2 {
     @include fonts(regularHeader)
   }
-  .Price{
+
+  .Price {
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
+    gap: 16px;
     align-items: flex-start;
-    &__textBloc{
+
+    &__right {
       display: flex;
-      flex-direction: column;
-      gap: 10px;
-      padding-right: 30px;
-      &__pb{
+      flex-direction: row;
+      width: 100%;
+      padding-right: 250px;
+
+      >.Price__pb {
         @include fonts(regular-bold)
       }
-      &__p{
+
+      >.Price__p {
+
         @include fonts(regular)
       }
     }
-    &__valueBlock{
-      min-width: 140px;
+
+    &__left {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      width: 100%;
+
+      >.Price__pb {
+        @include fonts(regular-bold)
+      }
+
+      >.Price__p {
+        @include fonts(regular)
+      }
     }
   }
 }

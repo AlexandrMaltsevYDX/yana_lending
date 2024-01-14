@@ -9,7 +9,8 @@
   @include px(16px);
   @include py(62px);
   width: min(100%, 1512px);
-  background-color: #e3cfb5;
+  //background-color: #e3cfb5;
+  background-color: getColor(main, base);
 }
 
 

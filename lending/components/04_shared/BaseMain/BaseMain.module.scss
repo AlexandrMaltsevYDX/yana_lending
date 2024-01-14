@@ -49,7 +49,7 @@ $base-var-2: min(625px, 94vw);
   &__left {
     grid-area: text;
     justify-content: flex-start;
-    background-color: #b43c4e;
+    //background-color: #b43c4e;
     @extend .GridCell;
     @include breakpoint(screen768) {
       justify-content: center;
@@ -59,7 +59,7 @@ $base-var-2: min(625px, 94vw);
   &__right {
     grid-area: photo;
     justify-content: flex-end;
-    background-color: #CC7951;
+    //background-color: #CC7951;
     @extend .GridCell;
     @include breakpoint(screen768) {
       justify-content: center;
@@ -74,7 +74,7 @@ $base-var-2: min(625px, 94vw);
   justify-content: center;
   width: $base-var;
   height: $base-var;
-  background-color: rebeccapurple;
+  //background-color: rebeccapurple;
 
   &__text {
     @extend .ContentBlock;
